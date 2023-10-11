@@ -39,6 +39,7 @@ body {
   /*short hand mais conhecido como atalho*/
   /* backgound: color image repeat position/size  */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -59,7 +60,8 @@ body * {
   margin-top: 56px;
 */
   /*short hand com Margin:. top - right - botton - left
-    no caso da  haver apenas 3 a segunda valera para a esquerda e direita.*/
+    no caso da  haver apenas 3 a segunda valera para a esquerda e direita
+    */
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -183,4 +185,17 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+  :root {
+
+    --bg-url: url(./assets/bg-desktop_dark.jpg);
+  }
+
+  .light {
+
+    --bg-url: url(./assets/bg-desktop_light.jpg);
+  }
 }
